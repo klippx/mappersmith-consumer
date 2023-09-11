@@ -1,0 +1,13 @@
+{
+  "name": "mappersmith-consumer",
+  "packageManager": "yarn@3.6.3",
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "mappersmith": "portal:/Users/MKLIPPIN/repos/mappersmith"
+  },
+  "dependencies": {
+    "mappersmith": "^2.42.0"
+  }
+}

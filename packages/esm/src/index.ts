@@ -1,0 +1,22 @@
+import forge, { configs } from "mappersmith";
+import FetchGateway from "mappersmith/gateway/fetch";
+
+console.log("Fetching from Github Status with mappersmith [ESM+typescript]");
+
+configs.gateway = FetchGateway;
+
+const github = forge({
+  clientId: "github",
+  host: "https://www.githubstatus.com",
+  resources: {
+    Status: {
+      current: { path: "/api/v2/status.json" },
+      summary: { path: "/api/v2/summary.json" },
+      components: { path: "/api/v2/components.json" },
+    },
+  },
+});
+
+github.Status.current().then((response) => {
+  console.log(`summary`, response.data());
+});

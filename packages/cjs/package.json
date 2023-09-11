@@ -1,0 +1,10 @@
+{
+  "name": "@mappersmith-consumer/cjs",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "dependencies": {
+    "mappersmith": "^2.42.0"
+  }
+}
