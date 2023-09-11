@@ -1,0 +1,10 @@
+{
+  "name": "@mappersmith-consumer/web",
+  "type": "commonjs",
+  "scripts": {
+    "start": "yarn http-server src/ -o /"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
