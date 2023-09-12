@@ -1,5 +1,5 @@
 {
-  "name": "@mappersmith-consumer/esm",
+  "name": "@mappersmith-consumer/esm-ts",
   "type": "module",
   "scripts": {
     "build": "tsc",

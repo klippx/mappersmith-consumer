@@ -1,4 +1,4 @@
-import forge, { configs } from "mappersmith";
+import forge, { configs, version } from "mappersmith";
 import FetchGateway from "mappersmith/gateway/fetch";
 
 console.log("Fetching from Github Status with mappersmith [ESM+typescript]");
@@ -18,5 +18,5 @@ const github = forge({
 });
 
 github.Status.current().then((response) => {
-  console.log(`summary`, response.data());
+  console.log(`mappersmith version ${version}`, response.data());
 });

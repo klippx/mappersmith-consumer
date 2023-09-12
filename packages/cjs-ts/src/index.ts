@@ -1,8 +1,9 @@
-const forge = require("mappersmith").default;
-const { configs, version } = require("mappersmith");
-const FetchGateway = require("mappersmith/gateway/fetch").default;
+import forge, { configs, version } from "mappersmith";
+import FetchGateway from "mappersmith/gateway/fetch";
 
-console.log("Fetching from Github Status with mappersmith [CJS, require]");
+console.log(
+  "Fetching from Github Status with mappersmith [CJS with typescript, import/from]"
+);
 
 configs.gateway = FetchGateway;
 

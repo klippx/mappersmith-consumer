@@ -1,10 +1,12 @@
-const forge = require("mappersmith").default;
-const { configs, version } = require("mappersmith");
-const FetchGateway = require("mappersmith/gateway/fetch").default;
+const mappersmith = require("mappersmith");
+const { default: forge, configs, version } = mappersmith;
+const FetchGateway = require("mappersmith/gateway/fetch");
 
-console.log("Fetching from Github Status with mappersmith [CJS, require]");
+console.log(
+  "Fetching from Github Status with mappersmith [CJS with typescript, const/require]"
+);
 
-configs.gateway = FetchGateway;
+configs.gateway = FetchGateway.default;
 
 const github = forge({
   clientId: "github",

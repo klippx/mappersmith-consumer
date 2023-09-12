@@ -6,8 +6,5 @@
   ],
   "resolutions": {
     "mappersmith": "portal:/Users/MKLIPPIN/repos/mappersmith"
-  },
-  "dependencies": {
-    "mappersmith": "^2.42.0"
   }
 }

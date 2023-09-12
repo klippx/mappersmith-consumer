@@ -5,6 +5,36 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
+  dependencies:
+    "@types/node": ^20.6.0
+    mappersmith: ^2.42.0
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
+"@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
+  dependencies:
+    "@types/node": ^20.6.0
+    mappersmith: ^2.42.0
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
+"@mappersmith-consumer/cjs-ts@workspace:packages/cjs-ts":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/cjs-ts@workspace:packages/cjs-ts"
+  dependencies:
+    "@types/node": ^20.6.0
+    mappersmith: ^2.42.0
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
 "@mappersmith-consumer/cjs@workspace:packages/cjs":
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs@workspace:packages/cjs"
@@ -13,9 +43,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mappersmith-consumer/esm@workspace:packages/esm":
+"@mappersmith-consumer/esm-ts@workspace:packages/esm-ts":
   version: 0.0.0-use.local
-  resolution: "@mappersmith-consumer/esm@workspace:packages/esm"
+  resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
   dependencies:
     mappersmith: ^2.42.0
     typescript: ^5.2.2
@@ -29,6 +59,13 @@ __metadata:
     http-server: ^14.1.1
   languageName: unknown
   linkType: soft
+
+"@types/node@npm:^20.6.0":
+  version: 20.6.0
+  resolution: "@types/node@npm:20.6.0"
+  checksum: 52611801af5cf151c6fac1963aa4a8a8ca2e388a9e9ed82b01b70bca762088ded5b32cc789c5564220d5d7dccba2b8dd34446a3d4fc74736805e1f2cf262e29d
+  languageName: node
+  linkType: hard
 
 "ansi-styles@npm:^4.1.0":
   version: 4.3.0
@@ -246,8 +283,6 @@ __metadata:
 "mappersmith-consumer@workspace:.":
   version: 0.0.0-use.local
   resolution: "mappersmith-consumer@workspace:."
-  dependencies:
-    mappersmith: ^2.42.0
   languageName: unknown
   linkType: soft
 

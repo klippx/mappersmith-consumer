@@ -2,6 +2,7 @@ import mappersmith from "./mappersmith.production.min.mjs";
 // import mappersmith from "./mappersmith-2.35.0.js";
 const forge = mappersmith.default;
 const configs = mappersmith.configs;
+const version = mappersmith.version;
 
 configs.gatewayConfigs.XHR = {
   withCredentials: false,
@@ -22,5 +23,5 @@ const github = forge({
 // profit!
 const response = await github.Status.status();
 
-console.log(`status:`, response.data());
+console.log(`mappersmith version ${version}`, response.data());
 console.log(`loaded in ${response.timeElapsed}ms`);
