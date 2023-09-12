@@ -1,8 +1,4 @@
-import mappersmith from "./mappersmith.production.min.mjs";
-// import mappersmith from "./mappersmith-2.35.0.js";
-const forge = mappersmith.default;
-const configs = mappersmith.configs;
-const version = mappersmith.version;
+import forge, { configs, version } from "./mappersmith.production.min.mjs";
 
 configs.gatewayConfigs.XHR = {
   withCredentials: false,
