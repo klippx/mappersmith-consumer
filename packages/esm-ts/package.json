@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test:live": "tsc --project tsconfig.json && node dist/index.js",
+    "test:live": "tsc --project tsconfig.json && node --es-module-specifier-resolution=node dist/index.js",
     "test": "vitest"
   },
   "dependencies": {
