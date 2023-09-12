@@ -3,12 +3,14 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "tsc && node dist/index.js"
+    "test:live": "tsc --project tsconfig.json && node dist/index.js",
+    "test": "vitest"
   },
   "dependencies": {
     "mappersmith": "^2.42.0"
   },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   }
 }
