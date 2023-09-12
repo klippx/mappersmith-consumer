@@ -21,7 +21,7 @@ esm-ts - ⛔️ "Cannot find module '/Users/MKLIPPIN/repos/mappersmith-consumer/
 # 2.43-beta
 
 cjs - ✅
-cjs-ts - ❗️
+cjs-ts - ✅
 cjs-ts-cr - ⛔️ [TS7006]
-cjs-ts-ir - ❗️
+cjs-ts-ir - ✅
 esm-ts - ✅
