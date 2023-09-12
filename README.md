@@ -6,7 +6,7 @@
 
 cjs - ✅
 cjs-ts - ✅
-cjs-ts-cr - ⛔️ [TS7006]
+cjs-ts-cr - ✅
 cjs-ts-ir - ✅
 esm-ts - ⛔️ [TS7006,TS2349,TS2307]
 
@@ -22,6 +22,6 @@ esm-ts - ⛔️ "Cannot find module '/Users/MKLIPPIN/repos/mappersmith-consumer/
 
 cjs - ✅
 cjs-ts - ✅
-cjs-ts-cr - ⛔️ [TS7006]
+cjs-ts-cr - ✅
 cjs-ts-ir - ✅
 esm-ts - ✅
