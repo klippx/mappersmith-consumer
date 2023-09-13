@@ -206,6 +206,7 @@ __metadata:
     "@types/node": ^20.6.0
     mappersmith: ^2.42.0
     typescript: ^5.2.2
+    vitest: ^0.34.4
   languageName: unknown
   linkType: soft
 

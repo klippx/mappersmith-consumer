@@ -3,13 +3,15 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "test:live": "tsc --project tsconfig.json && node dist/index.js"
+    "test:live": "tsc --project tsconfig.json && node dist/index.js",
+    "test": "vitest"
   },
   "dependencies": {
     "mappersmith": "^2.42.0"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
   }
 }
