@@ -1326,9 +1326,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith::locator=mappersmith-consumer%40workspace%3A.":
+"mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith/dist::locator=mappersmith-consumer%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith::locator=mappersmith-consumer%40workspace%3A."
+  resolution: "mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith/dist::locator=mappersmith-consumer%40workspace%3A."
   languageName: node
   linkType: soft
 

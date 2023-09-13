@@ -7,7 +7,7 @@ import _XHRGateway = require("mappersmith/gateway/xhr");
 import TimeoutError = require("mappersmith/gateway/timeout-error");
 const { isTimeoutError, createTimeoutError } = TimeoutError;
 
-// import _RetryMiddlewareV1 = require("mappersmith/middleware/retry");
+import _RetryMiddlewareV1 = require("mappersmith/middleware/retry");
 import _RetryMiddlewareV1Alt = require("mappersmith/middleware/retry/v1");
 import RetryMiddleware = require("mappersmith/middleware/retry/v2");
 import BasicAuth = require("mappersmith/middleware/basic-auth");
