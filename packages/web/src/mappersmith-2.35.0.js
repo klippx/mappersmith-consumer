@@ -1,1 +1,0 @@
-../../../../mappersmith-old/dist/mappersmith.js
