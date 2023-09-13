@@ -22,7 +22,7 @@ yarn workspace @mappersmith-consumer/esm-ts test:live;
 Unit test:
 
 ```sh
-# yarn workspace @mappersmith-consumer/cjs test --run;
+yarn workspace @mappersmith-consumer/cjs test --run;
 yarn workspace @mappersmith-consumer/cjs-ts test --run;
 # yarn workspace @mappersmith-consumer/cjs-ts-ir test --run;
 # yarn workspace @mappersmith-consumer/cjs-ts-cr test --run;
@@ -59,5 +59,6 @@ cjs - ✅
 cjs-ts - ✅
 cjs-ts-cr - ✅
 cjs-ts-ir - ✅
+cjs-ts-old - ✅
 esm-ts - ✅
 ```

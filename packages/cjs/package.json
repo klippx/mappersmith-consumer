@@ -2,9 +2,11 @@
   "name": "@mappersmith-consumer/cjs",
   "type": "commonjs",
   "scripts": {
-    "test:live": "node src/index.js"
+    "test:live": "node src/index.js",
+    "test": "vitest"
   },
   "dependencies": {
-    "mappersmith": "^2.42.0"
+    "mappersmith": "^2.42.0",
+    "vitest": "^0.34.4"
   }
 }

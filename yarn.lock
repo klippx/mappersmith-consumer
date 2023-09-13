@@ -240,6 +240,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs@workspace:packages/cjs"
   dependencies:
     mappersmith: ^2.42.0
+    vitest: ^0.34.4
   languageName: unknown
   linkType: soft
 
