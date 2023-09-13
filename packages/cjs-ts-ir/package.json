@@ -1,5 +1,6 @@
 {
   "name": "@mappersmith-consumer/cjs-ts-ir",
+  "description": "Mappersmith consumer with commonjs and typescript using [import x = require y] syntax",
   "type": "commonjs",
   "scripts": {
     "build": "tsc",

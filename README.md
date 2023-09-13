@@ -25,7 +25,7 @@ Unit test:
 yarn workspace @mappersmith-consumer/cjs test --run;
 yarn workspace @mappersmith-consumer/cjs-ts test --run;
 yarn workspace @mappersmith-consumer/cjs-ts-ir test --run;
-# yarn workspace @mappersmith-consumer/cjs-ts-cr test --run;
+yarn workspace @mappersmith-consumer/cjs-ts-cr test --run;
 yarn workspace @mappersmith-consumer/cjs-ts-old test --run;
 yarn workspace @mappersmith-consumer/esm-ts test --run;
 ```
