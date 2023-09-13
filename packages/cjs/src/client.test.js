@@ -12,17 +12,14 @@ const github = require("./client");
 describe("github client", () => {
   let mockSource;
   beforeAll(() => {
-    console.log("beforeAll");
     install();
   });
 
   afterAll(() => {
-    console.log("afterAll");
     uninstall();
   });
 
   beforeEach(() => {
-    console.log("beforeEach");
     mockSource = mockRequest({
       method: "get",
       url: "https://www.githubstatus.com/api/v2/status.json",
