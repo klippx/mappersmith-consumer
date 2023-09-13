@@ -11,11 +11,13 @@
 Integration/live test:
 
 ```sh
+# only works on 2.38 and higher (due to Response and version being exported):
 yarn workspace @mappersmith-consumer/cjs test:live;
 yarn workspace @mappersmith-consumer/cjs-ts test:live;
 yarn workspace @mappersmith-consumer/cjs-ts-ir test:live;
 yarn workspace @mappersmith-consumer/cjs-ts-cr test:live;
 yarn workspace @mappersmith-consumer/cjs-ts-old test:live;
+# only works on 2.43 and higher:
 yarn workspace @mappersmith-consumer/esm-ts test:live;
 ```
 
@@ -32,24 +34,15 @@ yarn workspace @mappersmith-consumer/esm-ts test --run;
 
 # 2.42
 
-`yarn workspace @mappersmith-consumer/{name} test`
+`yarn workspace @mappersmith-consumer/{name} test:live`
 
 ```
 cjs - ✅
 cjs-ts - ✅
 cjs-ts-cr - ✅
 cjs-ts-ir - ✅
-esm-ts - ⛔️ [TS7006,TS2349,TS2307]
-```
-
-# 2.35
-
-```
-cjs - ✅
-cjs-ts - ✅
-cjs-ts-cr - ⛔️ [TS7006]
-cjs-ts-ir - ✅
-esm-ts - ⛔️ "Cannot find module '/Users/MKLIPPIN/repos/mappersmith-consumer/node_modules/mappersmith/gateway/fetch'"
+cjs-ts-old - ✅
+esm-ts - ⛔️
 ```
 
 # 2.43-beta

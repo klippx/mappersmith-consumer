@@ -3,9 +3,9 @@ const { configs } = require("mappersmith");
 const FetchGateway = require("mappersmith/gateway/fetch").default;
 const _HTTPGateway = require("mappersmith/gateway/http");
 const _MockGateway = require("mappersmith/gateway/mock");
-const _XHRGateway = require("mappersmith/gateway/xhr");
+// const _XHRGateway = require("mappersmith/gateway/xhr");
 
-const _RetryMiddlewareV1 = require("mappersmith/middleware/retry");
+// const _RetryMiddlewareV1 = require("mappersmith/middleware/retry");
 const _RetryMiddlewareV1Alt = require("mappersmith/middleware/retry/v1");
 const RetryMiddleware = require("mappersmith/middleware/retry/v2");
 const BasicAuth = require("mappersmith/middleware/basic-auth");

@@ -1,4 +1,4 @@
-import { version } from "mappersmith";
+import { Response, version } from "mappersmith";
 import {
   isTimeoutError,
   createTimeoutError,
@@ -10,9 +10,10 @@ if (!isTimeoutError(createTimeoutError("classic timeout error"))) {
 }
 
 github.Status.current().then((response) => {
-  if (response instanceof Response) {
-    console.log(`Response OK`);
+  if (!(response instanceof Response)) {
+    throw new Error(`Response is not a Response`);
   }
+
   const status = response.data<{ status: { description: string } }>().status
     .description;
   console.log({

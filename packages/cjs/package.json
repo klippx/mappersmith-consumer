@@ -6,7 +6,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "mappersmith": "^2.42.0",
-    "vitest": "^0.34.4"
+    "mappersmith": "2.42.0",
+    "vitest": "0.34.4"
   }
 }

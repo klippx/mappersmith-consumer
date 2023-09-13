@@ -5,6 +5,6 @@
     "packages/*"
   ],
   "resolutions": {
-    "mappersmith": "portal:/Users/MKLIPPIN/repos/mappersmith/dist"
+    "mappersmith": "2.42.0"
   }
 }

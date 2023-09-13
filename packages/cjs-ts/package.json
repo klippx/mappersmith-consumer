@@ -7,13 +7,13 @@
     "test": "vitest"
   },
   "dependencies": {
-    "mappersmith": "^2.42.0",
+    "mappersmith": "2.42.0",
     "node-fetch": "2.7.0"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
     "@types/node-fetch": "2.6.4",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.4"
+    "vitest": "0.34.4"
   }
 }

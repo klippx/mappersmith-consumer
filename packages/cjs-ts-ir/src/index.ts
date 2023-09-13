@@ -6,16 +6,15 @@ const { github } = client;
 const { Response, version } = mappersmith;
 const { isTimeoutError, createTimeoutError } = TimeoutError;
 
-if (isTimeoutError(createTimeoutError("classic timeout error"))) {
-  console.log("TimeoutError OK");
-} else {
+if (!isTimeoutError(createTimeoutError("classic timeout error"))) {
   throw new Error("TimeoutError not OK");
 }
 
 github.Status.current().then((response) => {
-  if (response instanceof Response) {
-    console.log(`Response OK`);
+  if (!(response instanceof Response)) {
+    throw new Error(`Response is not a Response`);
   }
+
   console.log({
     version,
     status: response.data<{ status: { description: string } }>().status
