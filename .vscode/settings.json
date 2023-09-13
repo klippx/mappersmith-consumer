@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["mappersmith"]
+  "cSpell.words": ["mappersmith"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
