@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "test:live": "tsc --project tsconfig.json && node dist/index.js",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "dependencies": {
     "mappersmith": "2.42.0",

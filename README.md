@@ -19,17 +19,21 @@ yarn workspace @mappersmith-consumer/cjs-ts-cr test:live;
 yarn workspace @mappersmith-consumer/cjs-ts-old test:live;
 # only works on 2.43 and higher:
 yarn workspace @mappersmith-consumer/esm-ts test:live;
+# bun needs to be globally installed, see [docs](./packages/bun/README.md)
+yarn workspace @mappersmith-consumer/bun test:live;
 ```
 
 Unit test:
 
 ```sh
-yarn workspace @mappersmith-consumer/cjs test --run;
-yarn workspace @mappersmith-consumer/cjs-ts test --run;
-yarn workspace @mappersmith-consumer/cjs-ts-ir test --run;
-yarn workspace @mappersmith-consumer/cjs-ts-cr test --run;
-yarn workspace @mappersmith-consumer/cjs-ts-old test --run;
-yarn workspace @mappersmith-consumer/esm-ts test --run;
+yarn workspace @mappersmith-consumer/cjs test;
+yarn workspace @mappersmith-consumer/cjs-ts test;
+yarn workspace @mappersmith-consumer/cjs-ts-ir test;
+yarn workspace @mappersmith-consumer/cjs-ts-cr test;
+yarn workspace @mappersmith-consumer/cjs-ts-old test;
+yarn workspace @mappersmith-consumer/esm-ts test;
+# bun needs to be globally installed, see [docs](./packages/bun/README.md)
+yarn workspace @mappersmith-consumer/bun test;
 ```
 
 # 2.42

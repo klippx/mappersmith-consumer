@@ -1,0 +1,23 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`github client works github client works: 
+      {
+        "status": {
+          "description": "All Systems Operational",
+        },
+      }
+     1`] = `
+{
+  "status": {
+    "description": "All Systems Operational",
+  },
+}
+`;
+
+exports[`github client works github client works 1`] = `
+{
+  "status": {
+    "description": "All Systems Operational",
+  },
+}
+`;

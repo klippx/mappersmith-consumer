@@ -189,6 +189,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mappersmith-consumer/bun@workspace:packages/bun":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
+  dependencies:
+    bun-types: ^1.0.1
+    mappersmith: 2.42.0
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
 "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr":
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
@@ -540,6 +550,13 @@ __metadata:
   dependencies:
     balanced-match: ^1.0.0
   checksum: a61e7cd2e8a8505e9f0036b3b6108ba5e926b4b55089eeb5550cd04a471fe216c96d4fe7e4c7f995c728c554ae20ddfc4244cad10aef255e72b62930afd233d1
+  languageName: node
+  linkType: hard
+
+"bun-types@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "bun-types@npm:1.0.1"
+  checksum: c9126b0b0386374b9e50db417e26467c149e7d84a207223083def4770be515f4a68af5ef1287e2ae84f4be6d68b0b2bbb6bf971e4964fe6c99b669f5b0f1ad4c
   languageName: node
   linkType: hard
 
