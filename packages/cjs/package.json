@@ -2,6 +2,8 @@
   "name": "@mappersmith-consumer/cjs",
   "type": "commonjs",
   "scripts": {
+    "build": "",
+    "clean": "",
     "test:live": "node src/index.js",
     "test": "vitest --run"
   },

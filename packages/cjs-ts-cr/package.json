@@ -3,8 +3,9 @@
   "description": "Mappersmith consumer with commonjs and typescript using [const x = require y] syntax",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
-    "test:live": "tsc --project tsconfig.json && node dist/index.js",
+    "build": "tsc --noEmit",
+    "clean": "rm -rf dist/",
+    "test:live": "tsc && node dist/index.js",
     "test": "vitest --run"
   },
   "dependencies": {

@@ -4,6 +4,7 @@
   "module": "src/index.ts",
   "scripts": {
     "build": "tsc --noEmit",
+    "clean": "rm -rf dist/",
     "test:live": "bun run src/index.ts",
     "test": "bun test"
   },

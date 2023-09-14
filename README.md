@@ -8,7 +8,19 @@
 
 ## Test
 
-Integration/live test:
+### TSC
+
+```sh
+yarn build
+```
+
+### Integration/live tests
+
+```sh
+yarn test:integration
+```
+
+or one-by-one:
 
 ```sh
 # only works on 2.38 and higher (due to Response and version being exported):
@@ -23,7 +35,13 @@ yarn workspace @mappersmith-consumer/esm-ts test:live;
 yarn workspace @mappersmith-consumer/bun test:live;
 ```
 
-Unit test:
+### Unit tests
+
+```sh
+yarn test
+```
+
+or one-by-one:
 
 ```sh
 yarn workspace @mappersmith-consumer/cjs test;
