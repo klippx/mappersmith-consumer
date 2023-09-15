@@ -194,7 +194,7 @@ __metadata:
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
     bun-types: ^1.0.1
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     typescript: ^5.2.2
   languageName: unknown
   linkType: soft
@@ -204,7 +204,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
   dependencies:
     "@types/node": ^20.6.0
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -215,7 +215,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
   dependencies:
     "@types/node": ^20.6.0
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -227,7 +227,7 @@ __metadata:
   dependencies:
     "@types/node": ^20.6.0
     "@types/node-fetch": 2.6.4
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     node-fetch: 2.7.0
     typescript: 4.6.4
     vitest: 0.34.4
@@ -240,7 +240,7 @@ __metadata:
   dependencies:
     "@types/node": ^20.6.0
     "@types/node-fetch": 2.6.4
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     node-fetch: 2.7.0
     typescript: ^5.2.2
     vitest: 0.34.4
@@ -251,7 +251,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs@workspace:packages/cjs"
   dependencies:
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     vitest: 0.34.4
   languageName: unknown
   linkType: soft
@@ -260,7 +260,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
   dependencies:
-    mappersmith: 2.42.0
+    mappersmith: 2.43.0-beta.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -1346,10 +1346,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"mappersmith@npm:2.42.0":
-  version: 2.42.0
-  resolution: "mappersmith@npm:2.42.0"
-  checksum: d52d99bdc59d8fa3192ff18bbff7623f5193154ea23b77f0cb3058707cdd53bdd9fd905acdd9da53a48cdfd10c78c5e737d6b89f132ccf5ede782c986b3c6aee
+"mappersmith@npm:2.43.0-beta.0":
+  version: 2.43.0-beta.0
+  resolution: "mappersmith@npm:2.43.0-beta.0"
+  checksum: 875fba905848a62f4e56a1d0684aef3a5bc61b5f9118ffc89b90fd280078ffea562007c1b1e37f17c4473ed5c3b2a8a07b11e0e59a8bfc4a03397823950d3423
   languageName: node
   linkType: hard
 
