@@ -9,8 +9,5 @@
     "clean": "yarn workspaces foreach -tpv run clean",
     "test": "yarn workspaces foreach -tpv run test && echo 'Test completed without errors.' || echo '\nTest FAILED with errors!\n'",
     "test:integration": "yarn workspaces foreach -tpv run test:live  && echo 'Integration completed without errors.' || echo '\nIntegration FAILED with errors!\n'"
-  },
-  "resolutions": {
-    "mappersmith": "portal:/Users/MKLIPPIN/repos/mappersmith/dist"
   }
 }
