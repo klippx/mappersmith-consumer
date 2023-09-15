@@ -1,6 +1,6 @@
 {
-  "name": "@mappersmith-consumer/esm-ts",
-  "description": "Mappersmith consumer with esm and typescript, using named imports only from mappersmith, mappersmith/test, mappersmith/gateway and mappersmith/middleware",
+  "name": "@mappersmith-consumer/esm-ts-legacy-imports",
+  "description": "Mappersmith consumer with esm and typescript, using legacy import path for gateways and middleware",
   "type": "module",
   "scripts": {
     "build": "tsc --noEmit",

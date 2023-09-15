@@ -256,6 +256,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@mappersmith-consumer/esm-ts-legacy-imports@workspace:packages/esm-ts-legacy-imports":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/esm-ts-legacy-imports@workspace:packages/esm-ts-legacy-imports"
+  dependencies:
+    mappersmith: 2.43.0-beta.0
+    typescript: ^5.2.2
+    vitest: 0.34.4
+  languageName: unknown
+  linkType: soft
+
 "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts":
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
@@ -1346,12 +1356,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"mappersmith@npm:2.43.0-beta.0":
-  version: 2.43.0-beta.0
-  resolution: "mappersmith@npm:2.43.0-beta.0"
-  checksum: 875fba905848a62f4e56a1d0684aef3a5bc61b5f9118ffc89b90fd280078ffea562007c1b1e37f17c4473ed5c3b2a8a07b11e0e59a8bfc4a03397823950d3423
+"mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith/dist::locator=mappersmith-consumer%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "mappersmith@portal:/Users/MKLIPPIN/repos/mappersmith/dist::locator=mappersmith-consumer%40workspace%3A."
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "mime-db@npm:1.52.0":
   version: 1.52.0

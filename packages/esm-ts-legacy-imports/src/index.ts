@@ -1,7 +1,10 @@
 import { Response, version } from "mappersmith";
 import type { Response as ResponseType } from "mappersmith";
 
-import { isTimeoutError, createTimeoutError } from "mappersmith/gateway";
+import {
+  isTimeoutError,
+  createTimeoutError,
+} from "mappersmith/gateway/timeout-error";
 
 if (!isTimeoutError(createTimeoutError("classic timeout error"))) {
   throw new Error("TimeoutError not OK");
