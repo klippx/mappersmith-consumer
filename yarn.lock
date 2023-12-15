@@ -260,6 +260,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts-legacy-imports@workspace:packages/esm-ts-legacy-imports"
   dependencies:
+    extensionless: 1.9.6
     mappersmith: 2.43.0-beta.1
     typescript: ^5.2.2
     vitest: 0.34.4
@@ -270,6 +271,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
   dependencies:
+    extensionless: 1.9.6
     mappersmith: 2.43.0-beta.1
     typescript: ^5.2.2
     vitest: 0.34.4
@@ -902,6 +904,13 @@ __metadata:
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
   checksum: 3d21519a4f8207c99f7457287291316306255a328770d320b401114ec8481986e4e467e854cb9914dd965e0a1ca810a23ccb559c642c88f4c7f55c55778a9b48
+  languageName: node
+  linkType: hard
+
+"extensionless@npm:1.9.6":
+  version: 1.9.6
+  resolution: "extensionless@npm:1.9.6"
+  checksum: c923334d98d29e5ad55064c125a2fe136a8c3711524e8f92f1cbc4d64a83eeff700286febc5843b0aa7e3889312db7d48af1ff2149581d33c14eb45c5e189b08
   languageName: node
   linkType: hard
 
