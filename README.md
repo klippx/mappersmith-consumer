@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. In this repo, install node version (`18.15.0`, see `.tool-versions`) and latest yarn (`yarn set version stable` => `3.6.3`)
+1. In this repo, install correct node version (see `.tool-versions`) and latest yarn (`yarn set version stable`)
 2. Clone mappersmith and run `yarn` + `yarn publish:prepare`
 3. Back in this repo, link to the dist/ folder: `yarn link ../mappersmith/dist`
 
