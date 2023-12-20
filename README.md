@@ -1,23 +1,29 @@
-# mappersmith-cjs
+# Mappersmith Consumer
+
+This is a smoke test project that verifies that the `dist/` folder about to get published to npm for the `mappersmith` project works in a range of consumer projects, represented by a number of workspaces in this repo.
 
 ## Setup
 
-1. In this repo, install correct node version (see `.tool-versions`) and latest yarn (`yarn set version stable`)
+1. Install correct node version (see `.tool-versions`) and latest yarn (`yarn set version stable`)
 2. Clone mappersmith and run `yarn` + `yarn publish:prepare`
 3. Back in this repo, link to the dist/ folder: `yarn link ../mappersmith/dist`
 
 ## Test
 
-### TSC
+### Type compilation
+
+Verify tsc works in all projects:
 
 ```sh
-yarn build
+yarn build:all
 ```
 
 ### Integration/live tests
 
+Verify runtime is working in all projects:
+
 ```sh
-yarn test:integration
+yarn integration:all
 ```
 
 or one-by-one:
@@ -38,8 +44,10 @@ yarn workspace @mappersmith-consumer/bun test:live;
 
 ### Unit tests
 
+Verify tests are running in all projects:
+
 ```sh
-yarn test
+yarn test:all
 ```
 
 or one-by-one:
@@ -54,26 +62,36 @@ yarn workspace @mappersmith-consumer/esm-ts test;
 yarn workspace @mappersmith-consumer/bun test;
 ```
 
+## Compatibility log
+
 # 2.42
+
+In this version there was no ESM export so importing would not work correctly for ESM consumers.
 
 `yarn workspace @mappersmith-consumer/{name} test:live`
 
 ```
+bun - ⛔️
 cjs - ✅
 cjs-ts - ✅
 cjs-ts-cr - ✅
 cjs-ts-ir - ✅
 cjs-ts-old - ✅
 esm-ts - ⛔️
+esm-ts-legacy-imports - ⛔️
 ```
 
-# 2.43-beta
+# 2.43
+
+In this version we changed from using a custom build script to start using `tsup` bundling the dist/ folder. This is the milestone first ESM package exported to NPM.
 
 ```
+bun - ✅
 cjs - ✅
 cjs-ts - ✅
 cjs-ts-cr - ✅
 cjs-ts-ir - ✅
 cjs-ts-old - ✅
 esm-ts - ✅
+esm-ts-legacy-imports - ✅
 ```
