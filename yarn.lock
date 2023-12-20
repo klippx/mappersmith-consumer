@@ -194,7 +194,7 @@ __metadata:
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
     bun-types: ^1.0.1
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     typescript: ^5.2.2
   languageName: unknown
   linkType: soft
@@ -204,7 +204,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
   dependencies:
     "@types/node": ^20.6.0
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -215,7 +215,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
   dependencies:
     "@types/node": ^20.6.0
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -227,7 +227,7 @@ __metadata:
   dependencies:
     "@types/node": ^20.6.0
     "@types/node-fetch": 2.6.4
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     node-fetch: 2.7.0
     typescript: 4.6.4
     vitest: 0.34.4
@@ -240,7 +240,7 @@ __metadata:
   dependencies:
     "@types/node": ^20.6.0
     "@types/node-fetch": 2.6.4
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     node-fetch: 2.7.0
     typescript: ^5.2.2
     vitest: 0.34.4
@@ -251,7 +251,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs@workspace:packages/cjs"
   dependencies:
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     vitest: 0.34.4
   languageName: unknown
   linkType: soft
@@ -261,7 +261,7 @@ __metadata:
   resolution: "@mappersmith-consumer/esm-ts-legacy-imports@workspace:packages/esm-ts-legacy-imports"
   dependencies:
     extensionless: 1.9.6
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -272,7 +272,7 @@ __metadata:
   resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
   dependencies:
     extensionless: 1.9.6
-    mappersmith: 2.43.0-beta.1
+    mappersmith: 2.43.0
     typescript: ^5.2.2
     vitest: 0.34.4
   languageName: unknown
@@ -1365,10 +1365,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"mappersmith@npm:2.43.0-beta.1":
-  version: 2.43.0-beta.1
-  resolution: "mappersmith@npm:2.43.0-beta.1"
-  checksum: 28d748af873aa66e98437451e07e1e4c9eb4172241c6af7843cc66de153567324a69991aec9d6325503fa202589105f847ec08a4762508708c30c8829fd6058e
+"mappersmith@npm:2.43.0":
+  version: 2.43.0
+  resolution: "mappersmith@npm:2.43.0"
+  checksum: d8127cf32256bd3787157d8205a8d46cb4c6356e6cc8e863955e10c14eb2eedaa82ccd3951235d8231731846412f109e0722a14acbac942901c68a58dec1523c
   languageName: node
   linkType: hard
 
