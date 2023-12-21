@@ -1,0 +1,34 @@
+on:
+  workflow_call:
+    inputs:
+      package-name:
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: Build ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/build
+        with:
+          package-name: ${{ inputs.package-name }}
+
+  test:
+    name: Test ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/test
+        with:
+          package-name: ${{ inputs.package-name }}
+
+  integration:
+    name: Integration ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/test-integration
+        with:
+          package-name: ${{ inputs.package-name }}
