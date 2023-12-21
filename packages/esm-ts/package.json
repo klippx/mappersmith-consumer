@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "extensionless": "1.9.6",
-    "mappersmith": "2.43.0"
+    "mappersmith": "2.43.1"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
