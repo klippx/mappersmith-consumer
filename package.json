@@ -5,9 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build:all": "yarn workspaces foreach -A run build && echo 'Build completed without errors.' || echo '\nBuild FAILED with errors!\n'",
+    "build:all": "yarn workspaces foreach -A run build && echo 'Build completed without errors.' || (EXIT_CODE=$?; echo '\nBuild FAILED with errors!\n'; exit $EXIT_CODE)",
     "clean:all": "yarn workspaces foreach -A run clean",
-    "test:all": "yarn workspaces foreach -A run test && echo 'Test completed without errors.' || echo '\nTest FAILED with errors!\n'",
-    "integration:all": "yarn workspaces foreach -A run test:live  && echo 'Integration completed without errors.' || echo '\nIntegration FAILED with errors!\n'"
+    "test:all": "yarn workspaces foreach -A run test && echo 'Test completed without errors.' || (EXIT_CODE=$?; echo '\nTest FAILED with errors!\n'; exit $EXIT_CODE)",
+    "integration:all": "yarn workspaces foreach -A run test:live  && echo 'Integration completed without errors.' || (EXIT_CODE=$?; echo '\nIntegration FAILED with errors!\n'; exit $EXIT_CODE)"
   }
 }

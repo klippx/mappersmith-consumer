@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - packages/bun/**
+      - yarn.lock
+      - .yarnrc.yml
+
+concurrency:
+  cancel-in-progress: true
+  group: "test-${{ github.workflow }}-${{ github.ref_name }}"
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/test-workspace.yml
+    with:
+      package-name: bun
+      install-bun: true

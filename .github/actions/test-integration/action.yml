@@ -1,0 +1,25 @@
+name: "Integration Test"
+description: "Runs the integration tests"
+
+inputs:
+  node-version:
+    description: "Node.js version"
+    default: "18"
+  package-name:
+    description: "Package name"
+    required: true
+  install-bun:
+    description: "Install bun"
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/setup-environment
+      with:
+        node-version: ${{ inputs.node-version }}
+        install-bun: ${{ inputs.install-bun }}
+
+    - name: ${{ inputs.package-name }} integration tests
+      run: yarn workspace @mappersmith-consumer/${{ inputs.package-name }} test:live
+      shell: bash

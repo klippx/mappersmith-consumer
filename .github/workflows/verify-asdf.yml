@@ -1,0 +1,15 @@
+name: Verify ASDF
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - .tool-versions
+
+jobs:
+  asdf:
+    name: Install tool versions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: asdf-vm/actions/install@v2

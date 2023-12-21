@@ -1,0 +1,41 @@
+on:
+  workflow_call:
+    inputs:
+      package-name:
+        required: true
+        type: string
+      install-bun:
+        required: false
+        type: string
+        default: "false"
+
+jobs:
+  build:
+    name: Build ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/build
+        with:
+          package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
+
+  test:
+    name: Test ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/test
+        with:
+          package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
+
+  integration:
+    name: Integration ${{ inputs.package-name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/test-integration
+        with:
+          package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
