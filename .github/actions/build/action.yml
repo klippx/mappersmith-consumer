@@ -8,6 +8,9 @@ inputs:
   package-name:
     description: "Package name"
     required: true
+  install-bun:
+    description: "Install bun"
+    default: "false"
 
 runs:
   using: composite
@@ -15,6 +18,7 @@ runs:
     - uses: ./.github/actions/setup-environment
       with:
         node-version: ${{ inputs.node-version }}
+        install-bun: ${{ inputs.install-bun }}
 
     - name: ${{ inputs.package-name }} build
       run: yarn workspace @mappersmith-consumer/${{ inputs.package-name }} build

@@ -4,6 +4,10 @@ on:
       package-name:
         required: true
         type: string
+      install-bun:
+        required: false
+        type: string
+        default: "false"
 
 jobs:
   build:
@@ -14,6 +18,7 @@ jobs:
       - uses: ./.github/actions/build
         with:
           package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
 
   test:
     name: Test ${{ inputs.package-name }}
@@ -23,6 +28,7 @@ jobs:
       - uses: ./.github/actions/test
         with:
           package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
 
   integration:
     name: Integration ${{ inputs.package-name }}
@@ -32,3 +38,4 @@ jobs:
       - uses: ./.github/actions/test-integration
         with:
           package-name: ${{ inputs.package-name }}
+          install-bun: ${{ inputs.install-bun }}
