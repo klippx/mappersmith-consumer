@@ -7,7 +7,7 @@ import _XHRGateway from "mappersmith/gateway/xhr";
 import _RetryMiddlewareV1 from "mappersmith/middleware/retry";
 import _RetryMiddlewareV1Alt from "mappersmith/middleware/retry/v1";
 import RetryMiddleware from "mappersmith/middleware/retry/v2";
-import BasicAuth from "mappersmith/middleware/basic-auth";
+import BasicAuth from "mappersmith/middlewares/basic-auth";
 import CSRF from "mappersmith/middleware/csrf";
 import Duration from "mappersmith/middleware/duration";
 import EncodeJSON from "mappersmith/middleware/encode-json";
