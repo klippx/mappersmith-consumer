@@ -354,7 +354,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
-    bun-types: "npm:^1.0.1"
+    bun-types: "npm:^1.0.21"
     mappersmith: "npm:2.43.1"
     typescript: "npm:^5.2.2"
   languageName: unknown
@@ -609,6 +609,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ws@npm:*":
+  version: 8.5.10
+  resolution: "@types/ws@npm:8.5.10"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: 9b414dc5e0b6c6f1ea4b1635b3568c58707357f68076df9e7cd33194747b7d1716d5189c0dbdd68c8d2521b148e88184cf881bac7429eb0e5c989b001539ed31
+  languageName: node
+  linkType: hard
+
 "@vitest/expect@npm:0.34.4":
   version: 0.34.4
   resolution: "@vitest/expect@npm:0.34.4"
@@ -789,10 +798,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bun-types@npm:^1.0.1":
-  version: 1.0.18
-  resolution: "bun-types@npm:1.0.18"
-  checksum: d8b897d96429f2dadd4cf74667835848678ece93882c7a3ff98f2ef36329ae1c014536c61f96ffb98b442d059a40218cecc303996ccbe299e9a516fe8ad84aa1
+"bun-types@npm:^1.0.21":
+  version: 1.0.21
+  resolution: "bun-types@npm:1.0.21"
+  dependencies:
+    "@types/node": "npm:*"
+    "@types/ws": "npm:*"
+    undici-types: "npm:^5.26.4"
+  checksum: 5fad5dfa18d4da9d7201ae63b3670acf8ca035a04cd837aa356e3740d018d2908ce4e2de7e57b26ecb31a177e63ba63b00ceb2c996d41dd4c640523a44a869dc
   languageName: node
   linkType: hard
 
@@ -2359,6 +2372,13 @@ __metadata:
   version: 1.3.2
   resolution: "ufo@npm:1.3.2"
   checksum: 7133290d495e2b3f9416de69982019e81cff40d28cfd3a07accff1122ee52f23d9165e495a140a1b34b183244e88fc4001cb649591385ecbad1d3d0d2264fa6e
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:^5.26.4":
+  version: 5.28.2
+  resolution: "undici-types@npm:5.28.2"
+  checksum: 490faa27fa121cff7d8be4f5491bed868aff67846b3a4ffc87f84e2e03c9e06cfc46f011b58ef37d734e36188778b2d7944354ce085d2c8cc80a383dd4a76ce8
   languageName: node
   linkType: hard
 
