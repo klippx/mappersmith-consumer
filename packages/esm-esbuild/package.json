@@ -1,0 +1,20 @@
+{
+  "name": "@mappersmith-consumer/esm-esbuild",
+  "description": "Mappersmith consumer with esm, esbuild and typescript, without any node mjs extension hacks",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.js",
+    "clean": "rm -rf dist/",
+    "test:live": "yarn build && node dist/index.js",
+    "test:live:node18": "yarn build && node dist/index.js",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "esbuild": "0.19.11",
+    "mappersmith": "2.43.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vitest": "1.1.3"
+  }
+}
