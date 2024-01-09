@@ -8,7 +8,7 @@
     "test": "vitest --run"
   },
   "dependencies": {
-    "mappersmith": "2.43.1",
+    "mappersmith": "2.43.2",
     "node-fetch": "2.7.0"
   },
   "devDependencies": {

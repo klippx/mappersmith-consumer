@@ -9,7 +9,7 @@
     "test": "bun test"
   },
   "dependencies": {
-    "mappersmith": "2.43.1"
+    "mappersmith": "2.43.2"
   },
   "devDependencies": {
     "bun-types": "^1.0.21",
