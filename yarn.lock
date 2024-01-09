@@ -356,7 +356,7 @@ __metadata:
   dependencies:
     bun-types: "npm:^1.0.21"
     mappersmith: "npm:2.43.1"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
 
@@ -366,7 +366,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:^20.6.0"
     mappersmith: "npm:2.43.1"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -377,7 +377,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:^20.6.0"
     mappersmith: "npm:2.43.1"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -390,7 +390,7 @@ __metadata:
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.1"
     node-fetch: "npm:2.7.0"
-    typescript: "npm:4.6.4"
+    typescript: "npm:5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -403,7 +403,7 @@ __metadata:
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.1"
     node-fetch: "npm:2.7.0"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -423,7 +423,7 @@ __metadata:
   dependencies:
     extensionless: "npm:1.9.6"
     mappersmith: "npm:2.43.1"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -434,7 +434,7 @@ __metadata:
   dependencies:
     extensionless: "npm:1.9.6"
     mappersmith: "npm:2.43.1"
-    typescript: "npm:^5.2.2"
+    typescript: "npm:^5.3.3"
     vitest: "npm:0.34.4"
   languageName: unknown
   linkType: soft
@@ -2328,17 +2328,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.6.4":
-  version: 4.6.4
-  resolution: "typescript@npm:4.6.4"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 330d1e128efd90d78fff3892846a3b493998f2b09a04717922a84592ba1d7ae62b0a5e48b65a312c90eba1a1bdebf26c4441c84a3c633e88484006eecd893ccb
-  languageName: node
-  linkType: hard
-
-"typescript@npm:^5.2.2":
+"typescript@npm:5.3.3, typescript@npm:^5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -2348,17 +2338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A4.6.4#optional!builtin<compat/typescript>":
-  version: 4.6.4
-  resolution: "typescript@patch:typescript@npm%3A4.6.4#optional!builtin<compat/typescript>::version=4.6.4&hash=5d3a66"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: e237c7cc9b91b2bef546c43f87adef848a42bac95938972f6059aa804ce2d66298d7e13676939bc737bc0a6080561af8439e83dba37c721aa0cbf67a37151bbd
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
