@@ -6,7 +6,6 @@
     "build": "node esbuild.js",
     "clean": "rm -rf dist/",
     "test:live": "yarn build && node dist/index.js",
-    "test:live:node18": "yarn build && node dist/index.js",
     "test": "vitest --run"
   },
   "dependencies": {

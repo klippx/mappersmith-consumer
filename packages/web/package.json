@@ -2,9 +2,12 @@
   "name": "@mappersmith-consumer/web",
   "type": "commonjs",
   "scripts": {
-    "start": "yarn http-server src/ -o /"
+    "start": "yarn parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
   },
   "dependencies": {
-    "http-server": "^14.1.1"
+    "mappersmith": "2.43.2"
   }
 }
