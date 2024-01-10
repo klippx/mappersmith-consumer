@@ -1,4 +1,4 @@
-import forge, { configs, version } from "./mappersmith.production.min.mjs";
+import forge, { configs, version } from "mappersmith";
 
 configs.gatewayConfigs.XHR = {
   withCredentials: false,
@@ -17,7 +17,7 @@ const github = forge({
 });
 
 // profit!
-const response = await github.Status.status();
-
-console.log(`mappersmith version ${version}`, response.data());
-console.log(`loaded in ${response.timeElapsed}ms`);
+github.Status.status().then((response) => {
+  console.log(`mappersmith version ${version}`, response.data());
+  console.log(`loaded in ${response.timeElapsed}ms`);
+});

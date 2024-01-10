@@ -1,1 +1,0 @@
-../../../../mappersmith/dist/browser/mappersmith.production.min.mjs
