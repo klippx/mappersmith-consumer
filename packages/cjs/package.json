@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "mappersmith": "2.43.2",
-    "vitest": "1.1.3"
+    "vitest": "1.2.1"
   }
 }
