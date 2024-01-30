@@ -12,7 +12,7 @@
     "mappersmith": "2.43.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.5",
+    "@types/node": "^20.11.10",
     "typescript": "^5.3.3",
     "vitest": "1.2.1"
   }
