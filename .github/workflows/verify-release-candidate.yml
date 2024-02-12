@@ -1,0 +1,72 @@
+name: Verify Release Candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        required: true
+        description: The reference branch in mappersmith-consumer to verify against
+        default: main
+      mappersmith_branch:
+        required: true
+        description: The branch (release candidate) in mappersmith to verify with
+        default: master
+
+concurrency:
+  cancel-in-progress: true
+  group: "verify-release-candidate-${{ github.event.inputs.branch }}-${{ github.event.inputs.mappersmith_branch }}"
+
+jobs:
+  verify-release-candidate-build:
+    name: Release Candidate Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout mappersmith-consumer/
+        uses: actions/checkout@v4
+        with:
+          path: mappersmith-consumer
+          ref: github.event.inputs.branch
+      - uses: ./mappersmith-consumer/.github/actions/setup-release-candidate
+        with:
+          ref: github.event.inputs.mappersmith_branch
+      - name: Release Candidate tsc compile
+        run: |
+          cd mappersmith-consumer
+          yarn build:all
+        shell: bash
+
+  verify-release-candidate-unit:
+    name: Release Candidate Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout mappersmith-consumer/
+        uses: actions/checkout@v4
+        with:
+          path: mappersmith-consumer
+          ref: github.event.inputs.branch
+      - uses: ./mappersmith-consumer/.github/actions/setup-release-candidate
+        with:
+          ref: github.event.inputs.mappersmith_branch
+      - name: Release Candidate tsc compile
+        run: |
+          cd mappersmith-consumer
+          yarn test:all
+        shell: bash
+
+  verify-release-candidate-integration:
+    name: Release Candidate Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout mappersmith-consumer/
+        uses: actions/checkout@v4
+        with:
+          path: mappersmith-consumer
+          ref: github.event.inputs.branch
+      - uses: ./mappersmith-consumer/.github/actions/setup-release-candidate
+        with:
+          ref: github.event.inputs.mappersmith_branch
+      - name: Release Candidate tsc compile
+        run: |
+          cd mappersmith-consumer
+          yarn test:all
+        shell: bash
