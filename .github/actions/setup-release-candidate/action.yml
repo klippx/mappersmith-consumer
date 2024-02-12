@@ -38,6 +38,7 @@ runs:
       with:
         repository: tulios/mappersmith
         path: mappersmith
+        ref: ${{ inputs.ref }}
 
     - name: Install deps in mappersmith/
       run: |
