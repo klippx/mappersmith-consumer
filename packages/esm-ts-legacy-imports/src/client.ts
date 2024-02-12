@@ -14,6 +14,12 @@ import EncodeJSON from "mappersmith/middleware/encode-json";
 import ErrorHandler from "mappersmith/middleware/global-error-handler";
 import Log from "mappersmith/middleware/log";
 import Timeout from "mappersmith/middleware/timeout";
+import type { AsyncFunction as _AsyncFunction } from "mappersmith/client-builder";
+import { setContext as _setContext } from "mappersmith/mappersmith";
+import { MethodDescriptor as _MethodDescriptor } from "mappersmith/method-descriptor";
+import { Request as _Request } from "mappersmith/request";
+import { Response as _Response } from "mappersmith/response";
+import { version as _version } from "mappersmith/version";
 
 configs.gateway = FetchGateway;
 
