@@ -448,7 +448,7 @@ __metadata:
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
     bun-types: "npm:^1.0.25"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
@@ -458,7 +458,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
   dependencies:
     "@types/node": "npm:^20.11.16"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
   languageName: unknown
@@ -469,7 +469,7 @@ __metadata:
   resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
   dependencies:
     "@types/node": "npm:^20.11.16"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
   languageName: unknown
@@ -481,7 +481,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:^20.11.16"
     "@types/node-fetch": "npm:2.6.4"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
     typescript: "npm:5.3.3"
     vitest: "npm:1.2.2"
@@ -494,7 +494,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:^20.11.16"
     "@types/node-fetch": "npm:2.6.4"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
@@ -505,7 +505,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs@workspace:packages/cjs"
   dependencies:
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     vitest: "npm:1.2.2"
   languageName: unknown
   linkType: soft
@@ -515,7 +515,7 @@ __metadata:
   resolution: "@mappersmith-consumer/esm-esbuild@workspace:packages/esm-esbuild"
   dependencies:
     esbuild: "npm:0.20.0"
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
   languageName: unknown
@@ -525,7 +525,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts-legacy-imports@workspace:packages/esm-ts-legacy-imports"
   dependencies:
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
   languageName: unknown
@@ -535,7 +535,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/esm-ts@workspace:packages/esm-ts"
   dependencies:
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
     vitest: "npm:1.2.2"
   languageName: unknown
@@ -545,7 +545,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/web@workspace:packages/web"
   dependencies:
-    mappersmith: "npm:2.43.3"
+    mappersmith: "npm:2.43.4"
     parcel: "npm:^2.11.0"
   languageName: unknown
   linkType: soft
@@ -3204,10 +3204,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"mappersmith@npm:2.43.3":
-  version: 2.43.3
-  resolution: "mappersmith@npm:2.43.3"
-  checksum: 10702639e314ef3b9b20f4f94ddf41e3a08bbfda2d332ebe4cde2f8b55071505fda3a07c9ca5981f6694e74462e265c2889e3c70373b53dd29039ce253ec820b
+"mappersmith@npm:2.43.4":
+  version: 2.43.4
+  resolution: "mappersmith@npm:2.43.4"
+  checksum: cf634f46e4c47f482f97d8d8c05caba9416c9f9063b63d78d55584485cb1144d30fdf8dac7b7d51b464350d3283a5fd636439236aaad1fadc874bedbf979c11a
   languageName: node
   linkType: hard
 
