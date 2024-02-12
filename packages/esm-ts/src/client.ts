@@ -17,6 +17,12 @@ import {
   TimeoutMiddleware,
 } from "mappersmith/middleware";
 
+import { setContext as _setContext } from "mappersmith";
+import { MethodDescriptor as _MethodDescriptor } from "mappersmith";
+import { Request as _Request } from "mappersmith";
+import { Response as _Response } from "mappersmith";
+import { version as _version } from "mappersmith";
+
 configs.gateway = FetchGateway;
 
 export const github = forge({
