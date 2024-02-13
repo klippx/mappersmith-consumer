@@ -3,7 +3,7 @@ description: "Setup Release Candidate"
 
 inputs:
   ref:
-    description: "The ref to checkout"
+    description: The ref to checkout
     required: true
   node-version:
     description: Node version
@@ -12,7 +12,7 @@ inputs:
   bun-version:
     description: Bun version
     required: false
-    default: "1.0.18"
+    default: "1.0.26"
 
 runs:
   using: composite
