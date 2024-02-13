@@ -447,7 +447,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
-    bun-types: "npm:^1.0.25"
+    bun-types: "npm:^1.0.26"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.3.3"
   languageName: unknown
@@ -1744,7 +1744,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ws@npm:*":
+"@types/node@npm:~20.11.3":
+  version: 20.11.17
+  resolution: "@types/node@npm:20.11.17"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 3342df87258d1c56154bcd4b85180f48675427b235971e6e6e2e037353f5a2ae9aaa05ba5df0fe1e2d2f1022c8d856fd39056b9d7f50ea30c0ca3214137cae1d
+  languageName: node
+  linkType: hard
+
+"@types/ws@npm:~8.5.10":
   version: 8.5.10
   resolution: "@types/ws@npm:8.5.10"
   dependencies:
@@ -1978,14 +1987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bun-types@npm:^1.0.25":
-  version: 1.0.25
-  resolution: "bun-types@npm:1.0.25"
+"bun-types@npm:^1.0.26":
+  version: 1.0.26
+  resolution: "bun-types@npm:1.0.26"
   dependencies:
-    "@types/node": "npm:*"
-    "@types/ws": "npm:*"
-    undici-types: "npm:^5.26.4"
-  checksum: c126ba5e37dc779f333b54fc7afbd3d5f26c5cba32f1734bd7505d949bb467904e5378548ec71a5b7fecf652ae74319a1514841ab86c8627e52637f498f7b12b
+    "@types/node": "npm:~20.11.3"
+    "@types/ws": "npm:~8.5.10"
+  checksum: dfc299f637b1d338da4e9c7c747a444f701cf4aeabeb2e5cd52cc60d40862ef54c83f49c8b6575aaad7d8c2dc44c62711adc8f782a3087108bae04b54d01bfbc
   languageName: node
   linkType: hard
 
@@ -4219,13 +4227,6 @@ __metadata:
   version: 1.3.2
   resolution: "ufo@npm:1.3.2"
   checksum: 7133290d495e2b3f9416de69982019e81cff40d28cfd3a07accff1122ee52f23d9165e495a140a1b34b183244e88fc4001cb649591385ecbad1d3d0d2264fa6e
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:^5.26.4":
-  version: 5.28.2
-  resolution: "undici-types@npm:5.28.2"
-  checksum: 490faa27fa121cff7d8be4f5491bed868aff67846b3a4ffc87f84e2e03c9e06cfc46f011b58ef37d734e36188778b2d7944354ce085d2c8cc80a383dd4a76ce8
   languageName: node
   linkType: hard
 
