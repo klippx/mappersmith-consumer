@@ -5,6 +5,7 @@ on:
       - packages/cjs-ts/**
       - yarn.lock
       - .yarnrc.yml
+      - .tool-versions
 
 concurrency:
   cancel-in-progress: true

@@ -2,7 +2,7 @@ on:
   pull_request:
     types: [opened, synchronize]
     paths:
-      - packages/esm-ts/**
+      - packages/esm-esbuild/**
       - yarn.lock
       - .yarnrc.yml
       - .tool-versions
@@ -15,4 +15,4 @@ jobs:
   call-workflow:
     uses: ./.github/workflows/test-workspace.yml
     with:
-      package-name: esm-ts
+      package-name: esm-esbuild
