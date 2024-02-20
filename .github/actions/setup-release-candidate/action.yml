@@ -12,7 +12,6 @@ inputs:
   bun-version:
     description: Bun version
     required: false
-    default: "1.0.26"
 
 runs:
   using: composite
