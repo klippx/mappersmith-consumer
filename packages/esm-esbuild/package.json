@@ -9,7 +9,7 @@
     "test": "vitest --run"
   },
   "dependencies": {
-    "esbuild": "0.20.1",
+    "esbuild": "0.20.2",
     "mappersmith": "2.43.4"
   },
   "devDependencies": {
