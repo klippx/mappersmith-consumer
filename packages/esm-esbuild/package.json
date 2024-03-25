@@ -13,7 +13,7 @@
     "mappersmith": "2.43.4"
   },
   "devDependencies": {
-    "typescript": "^5.4.2",
+    "typescript": "^5.4.3",
     "vitest": "1.4.0"
   }
 }
