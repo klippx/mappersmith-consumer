@@ -447,7 +447,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
-    bun-types: "npm:^1.0.30"
+    bun-types: "npm:^1.1.3"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.4.2"
   languageName: unknown
@@ -457,7 +457,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
   dependencies:
-    "@types/node": "npm:^20.11.28"
+    "@types/node": "npm:^20.12.5"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.4.2"
     vitest: "npm:1.4.0"
@@ -468,7 +468,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
   dependencies:
-    "@types/node": "npm:^20.11.28"
+    "@types/node": "npm:^20.12.5"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.4.2"
     vitest: "npm:1.4.0"
@@ -479,7 +479,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-old@workspace:packages/cjs-ts-old"
   dependencies:
-    "@types/node": "npm:^20.11.28"
+    "@types/node": "npm:^20.12.5"
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
@@ -492,7 +492,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts@workspace:packages/cjs-ts"
   dependencies:
-    "@types/node": "npm:^20.11.28"
+    "@types/node": "npm:^20.12.5"
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
@@ -1736,12 +1736,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.11.28":
-  version: 20.11.28
-  resolution: "@types/node@npm:20.11.28"
+"@types/node@npm:^20.12.5":
+  version: 20.12.6
+  resolution: "@types/node@npm:20.12.6"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/b03f69213ac6e7cd5f7efa86139f24e23ff70a12fed04adeac5413b62d6982343ce94906f74c401c5afefda48d36ae0efd6a575240996b15a5cf80b456ab4221
+  checksum: 10/9feaa7f1c86b2541638f5446bdc4fd949a0ef6a53784db3d01296c503bb6e3e224bec4964f9a55b3ea669a200de824bfc6c944caf573019975e3c83fdc5f696e
   languageName: node
   linkType: hard
 
@@ -1988,13 +1988,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bun-types@npm:^1.0.30":
-  version: 1.0.30
-  resolution: "bun-types@npm:1.0.30"
+"bun-types@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "bun-types@npm:1.1.3"
   dependencies:
     "@types/node": "npm:~20.11.3"
     "@types/ws": "npm:~8.5.10"
-  checksum: 10/5e7e3a2bd25de383bf5a7e0fa204b725b5b9115ac42c7b2d2809cce8a10385e2bc8629441e0bef0c1cfb02b20d6a2709b0cfbecb0c20244afae06f8a47d07fa1
+  checksum: 10/1d38638f0dace7abd4c06fc0d1cf2e75d535956b56177abc5b44310f365504150d71fb257fdab3bfefa21718a7ace67637607afd0d08013d7f815d3fc7c5d2ad
   languageName: node
   linkType: hard
 
@@ -4214,11 +4214,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A5.4.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.2#optional!builtin<compat/typescript>":
   version: 5.4.2
-  resolution: "typescript@patch:typescript@npm%3A5.4.2#optional!builtin<compat/typescript>::version=5.4.2&hash=d69c25"
+  resolution: "typescript@patch:typescript@npm%3A5.4.2#optional!builtin<compat/typescript>::version=5.4.2&hash=5adc0c"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/ef4fc2994cc0219dc9ada94c92106ba8d44cbfd7a0328ed6f8d730311caf66e114cdfa07fbc6f369bfc0fc182d9493851b3bf1644c06fc5818690b19ee960d72
+  checksum: 10/f5f9a4133c2670761f0166eae5b3bafbc4a3fc24f0f42a93c9c893d9e9d6e66ea066969c5e7483fa66b4ae0e99125592553f3b92fd3599484de8be13b0615176
   languageName: node
   linkType: hard
 
