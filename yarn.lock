@@ -457,7 +457,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-cr@workspace:packages/cjs-ts-cr"
   dependencies:
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.0"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.4.5"
     vitest: "npm:1.6.0"
@@ -468,7 +468,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-ir@workspace:packages/cjs-ts-ir"
   dependencies:
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.0"
     mappersmith: "npm:2.43.4"
     typescript: "npm:^5.4.5"
     vitest: "npm:1.6.0"
@@ -479,7 +479,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts-old@workspace:packages/cjs-ts-old"
   dependencies:
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.0"
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
@@ -492,7 +492,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/cjs-ts@workspace:packages/cjs-ts"
   dependencies:
-    "@types/node": "npm:^20.12.7"
+    "@types/node": "npm:^20.14.0"
     "@types/node-fetch": "npm:2.6.4"
     mappersmith: "npm:2.43.4"
     node-fetch: "npm:2.7.0"
@@ -1736,12 +1736,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.7":
-  version: 20.12.7
-  resolution: "@types/node@npm:20.12.7"
+"@types/node@npm:^20.14.0":
+  version: 20.14.0
+  resolution: "@types/node@npm:20.14.0"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/b4a28a3b593a9bdca5650880b6a9acef46911d58cf7cfa57268f048e9a7157a7c3196421b96cea576850ddb732e3b54bc982c8eb5e1e5ef0635d4424c2fce801
+  checksum: 10/49b332fbf8aee4dc4f61cc1f1f6e130632510f795dd7b274e55894516feaf4bec8a3d13ea764e2443e340a64ce9bbeb006d14513bf6ccdd4f21161eccc7f311e
   languageName: node
   linkType: hard
 
