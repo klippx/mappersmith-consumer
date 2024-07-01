@@ -12,7 +12,7 @@
     "mappersmith": "2.43.4"
   },
   "devDependencies": {
-    "bun-types": "^1.1.12",
+    "bun-types": "^1.1.17",
     "typescript": "^5.4.5"
   }
 }
