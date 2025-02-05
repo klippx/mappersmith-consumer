@@ -291,7 +291,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/bun@workspace:packages/bun"
   dependencies:
-    bun-types: "npm:^1.2.1"
+    bun-types: "npm:^1.2.2"
     mappersmith: "npm:2.45.0"
     typescript: "npm:^5.7.3"
   languageName: unknown
@@ -1869,13 +1869,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bun-types@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "bun-types@npm:1.2.1"
+"bun-types@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "bun-types@npm:1.2.2"
   dependencies:
     "@types/node": "npm:*"
     "@types/ws": "npm:~8.5.10"
-  checksum: 10/c3f002c1567b69df72d00b53512f8188ac919be420217aaa2bd8564af0042357fab89b9c079201f2a86c153ec57478832c6eb521a0bf42583a7c1f04dbcddc4f
+  checksum: 10/a139c8f78c923c527d17e7e4e5c81c6654800c3aaf33d297402b2866e1db3ccb5f1e5925af68227ffd26126b28053dbfb4b898afa1caebeb6ed1a9e40295fb7e
   languageName: node
   linkType: hard
 
