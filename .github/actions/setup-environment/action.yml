@@ -4,7 +4,7 @@ description: "Setup Environment"
 inputs:
   node-version:
     description: "Node.js version"
-    default: "18"
+    default: "20"
   install-bun:
     description: "Install bun"
     default: "false"
@@ -19,9 +19,9 @@ runs:
 
     - if: ${{ inputs.install-bun == 'true' }}
       name: Install bun
-      uses: oven-sh/setup-bun@v1
+      uses: oven-sh/setup-bun@v2
       with:
-        bun-version: 1.1.27
+        bun-version: 1.2.2
 
     # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
     - name: Get yarn cache directory path
