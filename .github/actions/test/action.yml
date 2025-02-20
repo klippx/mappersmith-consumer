@@ -4,7 +4,7 @@ description: "Test"
 inputs:
   node-version:
     description: "Node.js version"
-    default: "18"
+    default: "20"
   package-name:
     description: "Package name"
     required: true
