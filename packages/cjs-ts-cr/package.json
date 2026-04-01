@@ -9,7 +9,7 @@
     "test": "vitest --run"
   },
   "dependencies": {
-    "mappersmith": "2.45.0"
+    "mappersmith": "2.47.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "esbuild": "0.25.0",
-    "mappersmith": "2.45.0"
+    "mappersmith": "2.47.0"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
