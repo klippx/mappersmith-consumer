@@ -45,4 +45,15 @@ describe("github client", () => {
     `);
     expect(mockSource.callsCount()).toEqual(1);
   });
+
+  test("standard debugging of mappersmith error during testing works", async () => {
+    const response = await github.Status.summary().catch((r) => r);
+    const message = response.errors[0].message.replace(
+      /x-started-at=\d+/g,
+      "x-started-at=<timestamp>",
+    );
+    expect(message).toMatchInlineSnapshot(
+      `"[Mappersmith Test] No match found for "GET https://www.githubstatus.com/api/v2/summary.json" (body: "undefined"; headers: "x-started-at=<timestamp>"), check your mock definition"`,
+    );
+  });
 });
