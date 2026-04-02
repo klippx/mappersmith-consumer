@@ -8,7 +8,7 @@ inputs:
   node-version:
     description: Node version
     required: false
-    default: "20"
+    default: "24"
   bun-version:
     description: Bun version
     required: false
