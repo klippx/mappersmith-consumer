@@ -127,10 +127,7 @@ If you add a new vitest-based package, include this config or tests will fail to
 
 ### Runtime versions
 
-Required tool versions are pinned in `.tool-versions` (asdf):
-
-- Node.js: 22.14.0
-- Bun: 1.2.2
+Required tool versions are pinned in `.tool-versions` (asdf)
 
 ### GitHub Actions
 
