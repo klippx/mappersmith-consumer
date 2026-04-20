@@ -366,6 +366,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@mappersmith-consumer/peer-deps@workspace:packages/peer-deps":
+  version: 0.0.0-use.local
+  resolution: "@mappersmith-consumer/peer-deps@workspace:packages/peer-deps"
+  dependencies:
+    "@types/node": "npm:^25.5.0"
+    "@types/node-fetch": "npm:2.6.4"
+    mappersmith: "npm:2.47.0"
+    node-fetch: "npm:2.7.0"
+    typescript: "npm:^6.0.2"
+    vitest: "npm:4.1.2"
+  languageName: unknown
+  linkType: soft
+
 "@mappersmith-consumer/web@workspace:packages/web":
   version: 0.0.0-use.local
   resolution: "@mappersmith-consumer/web@workspace:packages/web"

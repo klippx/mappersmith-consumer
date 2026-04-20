@@ -1,0 +1,20 @@
+{
+  "name": "@mappersmith-consumer/peer-deps",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "clean": "rm -rf dist/",
+    "test:live": "tsc && node dist/index.js",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "mappersmith": "2.47.0",
+    "node-fetch": "2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/node-fetch": "2.6.4",
+    "typescript": "^6.0.2",
+    "vitest": "4.1.2"
+  }
+}
