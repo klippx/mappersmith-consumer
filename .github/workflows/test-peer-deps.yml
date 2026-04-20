@@ -1,0 +1,43 @@
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - packages/peer-deps/**
+      - yarn.lock
+      - .yarnrc.yml
+      - .tool-versions
+  workflow_dispatch:
+
+concurrency:
+  cancel-in-progress: true
+  group: "test-${{ github.workflow }}-${{ github.ref_name }}"
+
+jobs:
+  test:
+    name: Test peer-deps (diff=${{ matrix.diff_version }}, tty-table=${{ matrix.tty_table_version }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - diff_version: "none"
+            tty_table_version: "none"
+          - diff_version: "^7.0.0"
+            tty_table_version: "^5.0.0"
+          - diff_version: "^8.0.0"
+            tty_table_version: "^5.0.0"
+          - diff_version: "^9.0.0"
+            tty_table_version: "^5.0.0"
+          - diff_version: "^9.0.0"
+            tty_table_version: "^4.0.0"
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/setup-environment
+
+      - name: Install optional peer deps
+        if: ${{ matrix.diff_version != 'none' }}
+        run: yarn workspace @mappersmith-consumer/peer-deps add diff@"${{ matrix.diff_version }}" tty-table@"${{ matrix.tty_table_version }}"
+        shell: bash
+
+      - name: Test peer-deps
+        run: yarn workspace @mappersmith-consumer/peer-deps test
+        shell: bash
