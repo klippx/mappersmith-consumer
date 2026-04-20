@@ -12,7 +12,7 @@ import { github } from "./client";
 describe("github client (optional peer deps)", () => {
   let mockSource: MockAssert;
   beforeAll(() => {
-    install();
+    install({ richMockErrors: true });
   });
 
   afterAll(() => {
@@ -52,11 +52,13 @@ describe("github client (optional peer deps)", () => {
       /x-started-at=\d+/g,
       "x-started-at=<timestamp>",
     );
-    // The error message format varies based on whether optional peer deps (diff, tty-table)
-    // are installed. We assert only the invariant parts.
-    expect(message).toContain("[Mappersmith Test] No match found for");
+    // With richMockErrors: true the error message is a structured breakdown.
+    // The exact format varies based on whether optional peer deps (diff, tty-table)
+    // are installed, but these invariants always hold.
+    expect(message).not.toContain("[Mappersmith Test] No match found for");
     expect(message).toContain(
-      'GET https://www.githubstatus.com/api/v2/summary.json',
+      "https://www.githubstatus.com/api/v2/summary.json",
     );
+    expect(message).toContain("Mock definitions installed:");
   });
 });
