@@ -30,7 +30,7 @@ jobs:
           - diff_version: "^9.0.0"
             tty_table_version: "^4.0.0"
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: ./.github/actions/setup-environment
 
       - name: Install optional peer deps
